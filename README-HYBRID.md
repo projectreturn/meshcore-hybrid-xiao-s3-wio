@@ -5,7 +5,7 @@ one Seeed XIAO ESP32-S3 with Wio-SX1262.
 
 ## Current version
 
-`v1.18.0-hybrid-test6-names`
+`v1.18.0-hybrid-test7-rxdiag`
 
 Based on upstream MeshCore commit `75b04ef`.
 
@@ -15,11 +15,13 @@ Based on upstream MeshCore commit `75b04ef`.
 - Separate identities, ACL files, shared secrets, and names for both roles
 - Current MeshCore v1.18 routing, scoped flooding, region handling, and path logic
 - `discover.neighbors` support
+- Packet, radio, and core statistics available through local and remote admin CLI
 - Room system posts through `room.post <text>`
 - ESP32-S3 at 80 MHz
 - Light sleep with LoRa DIO1 wake-up
 - 30-minute local advert interval
 - Wi-Fi OTA removed; Bluetooth is not started
+- Power saving defaults to off for reliable continuous repeater reception
 - 22 dBm transmit power and boosted receive gain retained
 - Complete 8 MB merged image layout: bootloader `0x0000`, partition table
   `0x8000`, OTA metadata `0xE000`, application `0x10000`

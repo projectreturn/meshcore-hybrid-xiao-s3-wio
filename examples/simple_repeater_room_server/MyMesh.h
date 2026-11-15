@@ -46,7 +46,7 @@ extern AbstractBridge* bridge;
 #endif
 
 #ifndef FIRMWARE_VERSION
-#define FIRMWARE_VERSION "v1.18.0-hybrid-test6-names"
+#define FIRMWARE_VERSION "v1.18.0-hybrid-test7-rxdiag"
 #endif
 
 #define FIRMWARE_ROLE "repeater_server"

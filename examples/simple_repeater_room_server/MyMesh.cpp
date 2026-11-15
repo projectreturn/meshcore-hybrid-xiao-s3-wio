@@ -1100,7 +1100,9 @@ MyMesh::MyMesh(mesh::MainBoard& board, mesh::Radio& radio,
   _prefs.interference_threshold = 0;
   _prefs.cad_enabled = 0;
   _prefs.loop_detect = LOOP_DETECT_MINIMAL;
-  _prefs.powersaving_enabled = 1;
+  // Repeaters must remain continuously available for receive. Power saving can
+  // still be enabled explicitly from the CLI when the installation supports it.
+  _prefs.powersaving_enabled = 0;
   snprintf(room_name, sizeof(room_name), "%s-R", _prefs.node_name);
 
 #if defined(USE_SX1262) || defined(USE_SX1268)
